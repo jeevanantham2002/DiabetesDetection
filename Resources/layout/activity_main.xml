@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	tools:context=".MainActivity">
+	<EditText
+		android:id="@+id/PlasmaGlucose"
+		android:layout_width="wrap_content"
+		android:layout_height="50dp"
+		android:layout_marginTop="5dp"
+		android:ems="10"
+		android:hint="Glucose Level"
+		android:inputType="numberDecimal"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/Pregnancies" />
+
+	<EditText
+		android:id="@+id/BloodPressure"
+		android:layout_width="wrap_content"
+		android:layout_height="50dp"
+		android:layout_marginTop="5dp"
+		android:ems="10"
+		android:hint="Blood Pressure (mmHg)"
+		android:inputType="numberDecimal"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/PlasmaGlucose" />
+
+	<EditText
+		android:id="@+id/TricepThickness"
+		android:layout_width="wrap_content"
+		android:layout_height="50dp"
+		android:layout_marginTop="5dp"
+		android:ems="10"
+		android:hint="Tricep Thickness"
+		android:inputType="numberDecimal"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/BloodPressure" />
+
+	<EditText
+		android:id="@+id/SerumInsulin"
+		android:layout_width="wrap_content"
+		android:layout_height="50dp"
+		android:layout_marginTop="5dp"
+		android:ems="10"
+		android:hint="Serum Insulin"
+		android:inputType="numberDecimal"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/TricepThickness" />
+
+	<EditText
+		android:id="@+id/BMI"
+		android:layout_width="wrap_content"
+		android:layout_height="50dp"
+		android:layout_marginTop="5dp"
+		android:ems="10"
+		android:hint="BMI"
+		android:inputType="numberDecimal"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/SerumInsulin" />
+
+	<EditText
+		android:id="@+id/DiabitiesPedigree"
+		android:layout_width="wrap_content"
+		android:layout_height="50dp"
+		android:layout_marginTop="5dp"
+		android:ems="10"
+		android:hint="Diabities Pedigree"
+		android:inputType="numberDecimal"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/BMI" />
+
+	<Button
+		android:id="@+id/Submit"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="Submit"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintHorizontal_bias="0.498"
+		Clicked="OnButtonClicked"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/Age" />
+
+	<TextView
+		android:id="@+id/Result"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="5dp"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/Submit" />
+
+	<EditText
+		android:id="@+id/Age"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="5dp"
+		android:ems="10"
+		android:hint="Age"
+		android:inputType="numberDecimal"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/DiabitiesPedigree" />
+	<EditText
+		android:id="@+id/Pregnancies"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="5dp"
+		android:ems="10"
+		android:hint="Number Of Pregnancies"
+		android:inputType="numberDecimal"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent"/>
+</android.support.constraint.ConstraintLayout>  
